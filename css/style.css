@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.6; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  transition: 0.3s ease; }
+
+ul {
+  list-style: none; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+  @media (max-width: 768px) {
+    .container {
+      width: 95%; } }
+
+/*******************
+topBar
+*******************/
+.topBar {
+  background: #2c3e50;
+  padding: 5px 0; }
+  .topBar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between; }
+    @media (max-width: 768px) {
+      .topBar .container {
+        flex-direction: column; } }
+  .topBar .logo {
+    font-size: 2rem;
+    color: #f1c40f;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+    .topBar .logo:hover {
+      color: #fff; }
+  .topBar .icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 20px; }
+    @media (max-width: 768px) {
+      .topBar .icons a {
+        margin: 10px; } }
+    .topBar .icons a:hover {
+      color: #f1c40f; }
+
+/*******************
+navigacija
+*******************/
+nav ul {
+  display: flex;
+  justify-content: center; }
+  nav ul li {
+    margin: 10px; }
+    @media (max-width: 768px) {
+      nav ul li {
+        margin: 5px; } }
+    nav ul li a {
+      color: #4a9375;
+      font-size: 1.2rem; }
+      @media (max-width: 768px) {
+        nav ul li a {
+          font-size: .9rem; } }
+      nav ul li a:hover {
+        color: #27ae60; }
+
+/*******************
+header
+*******************/
+header {
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header .box {
+    background: rgba(39, 174, 96, 0.7);
+    padding: 40px;
+    border: 1px solid #e9ecef;
+    color: #fff;
+    text-align: center; }
+    @media (max-width: 768px) {
+      header .box {
+        margin: 20px;
+        padding: 20px; } }
+    header .box h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 2px #2c3e50; }
+      @media (max-width: 768px) {
+        header .box h1 {
+          font-size: 2rem; } }
+    header .box h4 {
+      font-weight: 300;
+      font-size: 1.5rem; }
+    header .box button {
+      padding: 15px 30px;
+      border: none;
+      background: #f1c40f;
+      font-size: 1rem;
+      margin-top: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+      header .box button:hover {
+        background: #2c3e50;
+        cursor: pointer;
+        transition: 0.3s ease;
+        color: #fff; }
+
+/*******************
+onama
+*******************/
+.onama {
+  background-image: linear-gradient(rgba(74, 147, 117, 0.7), rgba(39, 174, 96, 0.7)), url(../img/onama.jpg);
+  background-position: center bottom;
+  height: 60vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff; }
+  .onama h2 {
+    font-size: 3rem;
+    text-shadow: 0 0 2px #2c3e50; }
+    @media (max-width: 768px) {
+      .onama h2 {
+        font-size: 2rem; } }
+  .onama p {
+    text-shadow: 0 0 2px #2c3e50; }
+
+/*******************
+izdvojeno
+*******************/
+.izdvojeno {
+  display: flex;
+  flex-wrap: wrap; }
+  .izdvojeno article {
+    flex: 1;
+    background: linear-gradient(to right, #f1c40f, #e9ecef); }
+    @media (max-width: 768px) {
+      .izdvojeno article {
+        flex: 0 0 50%; } }
+    .izdvojeno article img {
+      width: 100%; }
+    .izdvojeno article div {
+      padding: 20px;
+      text-align: center;
+      color: #fff; }
+  .izdvojeno article:nth-child(odd) div {
+    background: #2c3e50; }
+  .izdvojeno article:nth-child(even) div {
+    background: #27ae60; }
+
+/*******************
+benefiti
+*******************/
+.benefiti {
+  display: flex;
+  flex-wrap: wrap; }
+  .benefiti article {
+    flex: 0 0 50%;
+    background: #e9ecef;
+    height: 50vh; }
+    @media (max-width: 768px) {
+      .benefiti article {
+        flex: 0 0 100%; } }
+  .benefiti article:nth-child(1) {
+    @innclude flexCenter;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center; }
+    @media (max-width: 768px) {
+      .benefiti article:nth-child(1) {
+        padding: 20px; } }
+    .benefiti article:nth-child(1) article:nth-child(4) {
+      @innclude flexCenter;
+      flex-direction: column;
+      padding: 50px;
+      justify-content: center; }
+  .benefiti article:nth-child(2) {
+    background-image: url(/img/benefiti1.jpg);
+    background-position: center;
+    background-size: cover; }
+    @media (max-width: 768px) {
+      .benefiti article:nth-child(2) {
+        order: -1; } }
+  .benefiti article:nth-child(3) {
+    background-image: url(/img/benefiti2.jpg);
+    background-position: center;
+    background-size: cover; }
+
+/*******************
+footer
+*******************/
+footer {
+  background-image: linear-gradient(rgba(241, 196, 15, 0.85), rgba(241, 196, 15, 0.85)), url(/img/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 200px 0; }
+  @media (max-width: 768px) {
+    footer {
+      padding: 100px 0; } }
+  footer h3 {
+    font-size: 2rem;
+    margin-bottom: 20px; }
+  footer p {
+    margin-bottom: 20px; }
+  footer input {
+    padding: 15px; }
+    @media (max-width: 768px) {
+      footer input {
+        width: 100%;
+        margin-bottom: 20px; } }
+  footer input[type="submit"] {
+    padding: 15px 30px;
+    border: none;
+    background: #f1c40f;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #2c3e50;
+    color: #fff;
+    position: relative;
+    top: 2px; }
+    footer input[type="submit"]:hover {
+      background: #2c3e50;
+      cursor: pointer;
+      transition: 0.3s ease;
+      color: #fff; }
+    footer input[type="submit"]:hover {
+      background: #4a9375; }
+
+/*# sourceMappingURL=style.css.map */
